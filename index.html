@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#121425" />
+  <meta name="description" content="Campanha independente do GtaHypeBr: ajude a alcançar a meta de R$ 5.000 para PS5 e GTA VI. Escolha qualquer valor para contribuir via Pix." />
+  <title>GtaHypeBr | Nossa missão: PS5 + GTA VI</title>
+  <style>
+    :root { --bg: #0f1120; --panel: #1a1c31; --txt: #fefafd; --soft: #bfb9d1; --pink: #f6a2ba; --peach: #f6bdab; --line: rgba(255,255,255,.125); }
+    * { box-sizing: border-box; }
+    html { background:var(--bg); min-height:100%; }
+    body { margin:0; min-height:100vh; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--txt); background:radial-gradient(ellipse 65% 46% at 18% 0%,#7d47694b,transparent 85%),radial-gradient(ellipse 72% 53% at 92% 92%,#253e6966,transparent 85%),var(--bg); padding:22px; overflow-x:hidden; }
+    body::before { content:"";position:fixed;z-index:0;inset:0;pointer-events:none;opacity:.14;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='6' cy='9' r='.7' fill='white'/%3E%3Ccircle cx='77' cy='112' r='.7' fill='white'/%3E%3Ccircle cx='115' cy='30' r='.7' fill='white'/%3E%3C/svg%3E"); }
+    .container { position:relative; max-width:1070px; margin:auto; }
+    header { display:flex;align-items:center;justify-content:space-between;gap:15px;padding:13px 2px 28px; }
+    .brand { display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--txt); }
+    .brand-icon { width:39px;height:39px;display:grid;place-items:center;background:linear-gradient(140deg,#ed99bd,#a77acd);border-radius:12px;box-shadow:0 4px 22px #d779bb55;color:#21172b;font-size:21px;font-weight:900;letter-spacing:-.07em; }
+    .brand-name {font-weight:850;font-size:21px;letter-spacing:-.05em}
+    .brand-name span {color:var(--pink)}
+    .header-tag {font-size:11px;letter-spacing:.13em;color:#e5bed3;border:1px solid #f5bdd443;padding:10px 13px;border-radius:99px;text-transform:uppercase;font-weight:700}
+    .shell { border:1px solid var(--line);border-radius:30px;background:linear-gradient(155deg,#ffffff0e,#ffffff03);box-shadow:0 30px 110px #07071483; overflow:hidden; }
+    .top { display:grid;grid-template-columns:1fr 1.04fr;gap:0;min-height:460px; }
+    .copy-col { padding:51px 46px 42px;display:flex;flex-direction:column;justify-content:center;position:relative; }
+    .eyebrow {display:inline-flex;align-items:center;gap:8px;font-size:11px;text-transform:uppercase;letter-spacing:.18em;font-weight:800;color:#f4b1cb;margin-bottom:20px}
+    .eyebrow::before {content:"";width:7px;height:7px;background:#f7b9bd;border-radius:50%;box-shadow:0 0 0 4px #f7b9bd24}
+    h1 {font-size:clamp(35px,4.4vw,55px);letter-spacing:-.067em;line-height:1.055;margin:0 0 17px;font-weight:900;max-width:510px}
+    h1 em {font-style:normal;background:linear-gradient(90deg,#ffc4ac,#f4a4c9 60%,#d9a5f0);background-clip:text;-webkit-background-clip:text;color:transparent}
+    .lead {max-width:410px;color:#c5bfd3;font-size:15px;line-height:1.75;margin:0 0 23px}
+    .chips {display:flex;gap:8px;flex-wrap:wrap}
+    .chip {display:inline-flex;align-items:center;gap:8px;padding:9px 12px;border-radius:12px;border:1px solid #ffffff24;font-size:12px;font-weight:750;color:#efecf4;background:#ffffff09}
+    .chip-dot {width:6px;height:6px;background:#eab2c7;border-radius:50%}
+    .art-col {position:relative;min-height:460px;isolation:isolate;background:#463253;overflow:hidden}
+    .art-col svg {position:absolute;width:100%;height:100%;inset:0;display:block}
+    .art-col::after {content:"";position:absolute;z-index:2;inset:0;background:linear-gradient(to right,#15152430 0%,transparent 17%),linear-gradient(to top,#0e162a88,transparent 38%);pointer-events:none}
+    .art-badge {position:absolute;z-index:3;bottom:27px;left:29px;right:29px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;text-shadow:0 2px 20px #172038b0}
+    .art-logo {font-size:clamp(44px,5.3vw,69px);line-height:.9;font-weight:1000;letter-spacing:-.09em}
+    .art-logo span {color:#ffd5d3}
+    .art-caption {font-size:11px;text-transform:uppercase;letter-spacing:.2em;font-weight:800;opacity:.9;margin-top:11px}
+    .art-counter {font-size:12px;font-weight:800;background:#1a183b72;backdrop-filter:blur(12px);border:1px solid #ffffff55;border-radius:12px;padding:12px;text-align:right;white-space:nowrap}
+    .bottom {display:grid;grid-template-columns:1fr 1fr;gap:37px;background:#15182b;padding:37px 46px 40px;border-top:1px solid var(--line)}
+    .section-kicker {font-size:11px;color:#eab4cd;letter-spacing:.15em;text-transform:uppercase;font-weight:800;margin:0 0 11px}
+    .title-row {display:flex;align-items:flex-end;justify-content:space-between;gap:10px}
+    .big-amount {font-size:36px;font-weight:850;letter-spacing:-.06em;line-height:1.15}
+    .tiny {font-size:13px;color:#bfbacc}
+    .pct {font-size:26px;font-weight:850;letter-spacing:-.05em;color:#f8ced6}
+    .bar {height:13px;border-radius:100px;background:#ffffff1e;border:1px solid #ffffff15;overflow:hidden;margin:17px 0 12px}
+    .bar-fill {width:0%;height:100%;border-radius:100px;background:linear-gradient(90deg,#f7acaf,#d9a2d5);box-shadow:0 0 15px #ffaecc55;transition:width 1s ease}
+    .bar-meta {display:flex;align-items:center;justify-content:space-between;gap:10px;color:#bfbacc;font-size:12px}
+    .bottom-note {display:flex;align-items:start;gap:10px;margin-top:22px;color:#a9a9c1;font-size:12px;line-height:1.6}
+    .bottom-note svg {flex:0 0 auto;margin-top:1px}
+    .donation-heading {font-size:23px;font-weight:850;letter-spacing:-.04em;margin:-1px 0 8px}
+    .donation-text {color:#bfbacc;line-height:1.6;font-size:13px;margin:0 0 19px}
+    .pix-button {width:100%;display:flex;align-items:center;justify-content:center;gap:12px;cursor:pointer;border:0;background:#fcfafc;color:#161729;border-radius:18px;padding:19px 14px;min-height:64px;font:800 16px/1.2 Inter,ui-sans-serif,system-ui,sans-serif;box-shadow:0 7px 0 #c9c5cf,0 14px 29px #06060c5a;transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+    .pix-button:hover {transform:translateY(-4px);box-shadow:0 11px 0 #c9c5cf,0 19px 33px #06060c75;background:#fff}
+    .pix-button:active {transform:translateY(4px) scale(.99);box-shadow:0 3px 0 #c9c5cf,0 6px 16px #06060c5a}
+    .pix-button:focus-visible,.qr-toggle:focus-visible,.close:focus-visible {outline:3px solid #f5aed2;outline-offset:4px}
+    .howto {font-size:12px;color:#b5adbf;text-align:center;margin:19px 0 0;line-height:1.65}
+    .qr-toggle {background:none;border:0;padding:6px;color:#ebbed0;text-decoration:underline;text-underline-offset:3px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}
+    .foot {display:flex;justify-content:space-between;gap:20px;padding:22px 4px 15px;align-items:center;color:#9995ab;font-size:11px;line-height:1.65}
+    .foot strong {color:#d4bbcb}
+    .toast {position:fixed;z-index:25;bottom:max(25px,env(safe-area-inset-bottom));left:50%;transform:translate(-50%,24px) scale(.97);width:min(calc(100% - 30px),390px);padding:14px 19px;border:1px solid #e5b4cc6c;border-radius:19px;box-shadow:0 14px 48px #060711ac;background:linear-gradient(120deg,#25223b,#29253e);display:flex;align-items:center;gap:12px;opacity:0;visibility:hidden;transition:transform .24s,opacity .24s,visibility .24s;pointer-events:none}
+    .toast.show {transform:translate(-50%,0) scale(1);opacity:1;visibility:visible}
+    .toast-mark {background:#28b976;color:#fff;width:30px;height:30px;flex:0 0 auto;border-radius:50%;display:grid;place-items:center;box-shadow:0 0 0 4px #22c87823}
+    .toast-copy {display:flex;flex-direction:column;gap:3px;font-size:13px}
+    .toast-copy b {font-size:14px}
+    .toast-copy span {color:#c7bed1;font-size:11px}
+    dialog {border:1px solid #eeb9d455;border-radius:23px;color:#fff;background:#1b1e34;box-shadow:0 30px 100px #000a;padding:24px;text-align:center;max-width:350px;width:calc(100% - 30px)}dialog::backdrop{background:#090c19be;backdrop-filter:blur(5px)}
+    dialog h3 {margin:4px 0 9px;letter-spacing:-.03em}dialog p{color:#c1b9cd;font-size:13px;line-height:1.6}
+    .qr-box{background:white;padding:13px;border-radius:15px;width:min(250px,100%);margin:16px auto;display:block}.qr-box img{width:100%;display:block;aspect-ratio:1}
+    .close{border:1px solid #ffffff38;border-radius:10px;color:#fff;background:#ffffff15;padding:10px 19px;font:700 13px system-ui;cursor:pointer}
+    @media (max-width:800px){.top{grid-template-columns:1fr}.art-col{grid-row:1;min-height:360px}.copy-col{padding:33px 34px 36px}.bottom{grid-template-columns:1fr;gap:30px;padding:30px 34px 35px}.bar{margin-top:15px}.shell{border-radius:25px}}
+    @media (max-width:530px){body{padding:13px}.header-tag{font-size:9px;letter-spacing:.05em;padding:8px}.brand-name{font-size:19px}header{padding:10px 3px 19px}.art-col{min-height:290px}.art-logo{font-size:53px}.art-counter{font-size:10px;padding:9px}.art-badge{left:18px;bottom:17px;right:18px}.copy-col{padding:29px 24px 32px}h1{font-size:39px}.lead{font-size:14px}.bottom{padding:29px 24px 34px}.big-amount{font-size:34px}.foot{display:block;text-align:center;padding-top:19px}.shell{border-radius:22px}.donation-heading{font-size:22px}}
+    @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
+
+/* Painel acessível somente se o navegador bloquear a cópia automática. */
+.copy-manual-backdrop[hidden]{display:none!important}
+.copy-manual-backdrop{position:fixed;inset:0;z-index:999;display:grid;place-items:center;padding:18px;background:#080a18dc;backdrop-filter:blur(6px)}
+.copy-manual-card{background:#24233a;color:#fff;border:1px solid #e8acc866;border-radius:23px;padding:24px;box-shadow:0 24px 90px #0009;max-width:510px;width:100%;text-align:center}
+.copy-manual-card h2{margin:0 0 12px;font-size:23px}.copy-manual-card p{font-size:13px;line-height:1.6;color:#d1cbda}
+.copy-manual-card textarea{width:100%;height:115px;resize:none;box-sizing:border-box;border:1px solid #bca0bf;border-radius:12px;background:#fff;color:#181827;padding:12px;font:13px/1.5 ui-monospace,monospace;user-select:text;-webkit-user-select:text}
+.manual-controls{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:15px}.manual-controls button{border:0;border-radius:12px;padding:13px 17px;font-weight:800;background:#fff;color:#202035;cursor:pointer}.manual-controls button+button{background:#383752;color:#fff;border:1px solid #77718b}
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <a class="brand" href="#inicio" aria-label="Início do GtaHypeBr"><span class="brand-icon">VI</span><span class="brand-name">GtaHype<span>Br</span></span></a>
+    <span class="header-tag">Campanha da comunidade</span>
+  </header>
+  <main class="shell" id="inicio">
+    <section class="top" aria-label="Campanha GtaHypeBr">
+      <div class="copy-col">
+        <div class="eyebrow">Uma missão, uma comunidade</div>
+        <h1>O próximo capítulo <em>começa com você.</em></h1>
+        <p class="lead">Ajude o GtaHypeBr a conquistar um <strong>PlayStation 5 + GTA VI</strong> e acompanhar essa jornada do começo ao fim. Cada contribuição aproxima a gente da meta.</p>
+        <div class="chips"><span class="chip"><i class="chip-dot"></i> Meta: R$ 5.000</span><span class="chip"><i class="chip-dot"></i> Qualquer valor ajuda</span></div>
+      </div>
+      <div class="art-col" aria-label="Paisagem de pôr do sol inspirado em Vice City com o sol inteiro, mar, palmeiras e silhueta de prédios" role="img">
+        <svg viewBox="0 0 720 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#3f3a80"/><stop offset=".31" stop-color="#9861a4"/><stop offset=".62" stop-color="#ed9dad"/><stop offset=".82" stop-color="#ffbe9b"/><stop offset="1" stop-color="#634a7b"/></linearGradient>
+            <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffecd1"/><stop offset=".72" stop-color="#ffc7a6"/><stop offset="1" stop-color="#faacac"/></linearGradient>
+            <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b979a0"/><stop offset="1" stop-color="#282a59"/></linearGradient>
+            <filter id="glow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="25"/></filter>
+          </defs>
+          <rect width="720" height="500" fill="url(#sky)"/>
+          <path d="M0 102 Q145 65 280 101 T580 94 T720 122" stroke="#ffffff17" stroke-width="22" fill="none"/>
+          <circle cx="361" cy="226" r="123" fill="#ffe1b8" opacity=".35" filter="url(#glow)"/>
+          <circle cx="361" cy="226" r="94" fill="url(#sun)"/>
+          <path d="M0 335H720V500H0Z" fill="url(#water)"/>
+          <path d="M0 335H720" stroke="#fbd1b3" stroke-width="3" opacity=".7"/>
+          <g stroke="#f2b5c0" stroke-width="2" opacity=".35"><path d="M245 366h220M265 384h190M280 406h158M297 428h133M307 455h99"/></g>
+          <g fill="#3b355f" opacity=".76">
+            <path d="M0 325V265h22v-34h28v32h18v-81h29v-17h27v16h13v112h20v-56h30v-31h31v25h22v82h16v-34h37v45H0Z"/>
+            <path d="M491 333v-57h24v-85h30v-14h27v14h14v89h18v-51h29v-19h25v71h31v-32h31v85Z"/>
+          </g>
+          <g fill="#211f40">
+            <path d="M0 360l85-24 75 19 89-19 100 18 74-22 112 17 88-24 97 28v147H0Z" opacity=".6"/>
+            <path d="M0 428Q98 397 197 414T413 423T720 403V500H0Z"/>
+          </g>
+          <g fill="none" stroke="#191b38" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M74 510Q100 335 108 180" stroke-width="17"/>
+            <path d="M105 181Q49 132 0 156M105 181Q25 177 -26 218M106 178Q147 120 197 136M106 179Q179 162 235 205M108 179Q91 105 122 69M104 181Q72 93 42 80" stroke-width="19"/>
+            <path d="M662 515Q632 367 627 230" stroke-width="14"/>
+            <path d="M628 230Q584 181 524 198M628 232Q677 168 732 178M626 230Q577 235 540 290M629 230Q685 232 738 278M628 230Q609 166 612 124" stroke-width="17"/>
+          </g>
+          <g fill="#191b38"><path d="M45 150Q65 151 105 184Q66 177 45 150ZM10 217Q58 183 106 183Q76 209 10 217ZM201 136Q157 136 108 184Q145 143 201 136ZM236 206Q175 180 105 183Q173 202 236 206ZM119 70Q95 113 106 184Q121 129 119 70Z"/><path d="M522 197Q590 198 628 232Q567 218 522 197ZM732 179Q689 174 628 233Q687 204 732 179ZM539 290Q575 244 625 231Q585 281 539 290ZM738 277Q688 230 628 230Q697 259 738 277Z"/></g>
+        </svg>
+        <div class="art-badge"><div><div class="art-logo">GTA <span>VI</span></div><div class="art-caption">Sunset edition · PS5</div></div><span class="art-counter">RUMO À META<br>R$ 5.000</span></div>
+      </div>
+    </section>
+    <section class="bottom" aria-label="Progresso e doação">
+      <div>
+        <p class="section-kicker">Missão em andamento</p>
+        <div class="title-row"><div><div class="big-amount" id="raised">R$ 0,00</div><div class="tiny">arrecadados de R$ 5.000,00</div></div><div class="pct" id="percent">0%</div></div>
+        <div class="bar" id="bar" role="progressbar" aria-label="Progresso da arrecadação" aria-valuemin="0" aria-valuemax="5000" aria-valuenow="0"><div class="bar-fill" id="fill"></div></div>
+        <div class="bar-meta"><span>Início da campanha</span><span id="remaining">Faltam R$ 5.000,00</span></div>
+      </div>
+      <div>
+        <p class="section-kicker">Faça parte dessa história</p>
+        <h2 class="donation-heading">Bora realizar essa missão?</h2>
+        <p class="donation-text">Você escolhe o valor. Copie o código, abra seu banco e faça um Pix com segurança.</p>
+        <button class="pix-button" id="copyPix" type="button" aria-label="Copiar código Pix para doar"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg><span>Copiar Pix para doar</span></button>
+        <p class="howto">Abra o banco → Pix → <strong>Copia e Cola</strong>.<br><a class="qr-toggle" id="showQR" href="qr.html">Ou veja o QR Code para escanear</a></p>
+      </div>
+    </section>
+  </main>
+  <footer class="foot"><span><strong>GtaHypeBr</strong> · Campanha independente, não afiliada à Rockstar Games ou à Sony.</span><span>Confira sempre nome, banco e valor antes de confirmar seu Pix.</span></footer>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"><span class="toast-mark" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><span class="toast-copy"><b id="toastTitle">Código Pix copiado!</b><span id="toastDesc">Agora é só colar no aplicativo do banco.</span></span></div>
+<div class="copy-manual-backdrop" id="manualPix" hidden role="dialog" aria-modal="true" aria-labelledby="manualPixTitle">
+ <div class="copy-manual-card">
+  <h2 id="manualPixTitle">Copiar código Pix</h2>
+  <p>O navegador bloqueou a cópia automática. Toque no código e escolha <strong>Copiar</strong>.</p>
+  <textarea id="pixManualField" readonly spellcheck="false" aria-label="Código Pix Copia e Cola"></textarea>
+  <div class="manual-controls"><button type="button" id="selectPixManual">Selecionar código</button><button type="button" id="closePixManual">Fechar</button></div>
+ </div>
+</div>
+<script>
+// Este código Pix foi gerado pelo titular e validado apenas quanto à integridade do CRC.
+const PIX_CODE = '00020126810014BR.GOV.BCB.PIX0136011c5ec8-6b2e-4461-a8b2-6d5b2a3f17da0219Campanha GtaHypeBr 5204000053039865802BR5925DANIEL NASCIMENTO DO CARM6009SAO PAULO622605221Xk8PDyfnholdnwr2zhEaW630453CB';
+const GOAL = 5000;
+let toastTimer;
+function showToast(title,desc,ok=true){
+ const box=document.getElementById('toast');
+ document.getElementById('toastTitle').textContent=title;
+ document.getElementById('toastDesc').textContent=desc;
+ box.querySelector('.toast-mark').style.background=ok?'#28b976':'#cf7d74';
+ box.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>box.classList.remove('show'),3800);
+}
+function copyLegacy(text){
+ const ta=document.createElement('textarea');
+ ta.value=text;ta.setAttribute('readonly','');
+ ta.style.cssText='position:fixed;left:10px;top:10px;width:40px;height:40px;opacity:.01;z-index:-1;font-size:16px';
+ document.body.appendChild(ta);ta.focus();ta.select();ta.setSelectionRange(0,text.length);
+ let copied=false;
+ try { copied=document.execCommand('copy') } catch(e) {}
+ ta.remove();return copied;
+}
+function showManualPix(){
+ const panel=document.getElementById('manualPix');
+ panel.hidden=false;
+ const field=document.getElementById('pixManualField');
+ field.value=PIX_CODE;
+ field.focus();field.select();field.setSelectionRange(0,field.value.length);
+ showToast('Copie o código manualmente','O navegador não permitiu copiar automaticamente.',false);
+}
+async function copyPix(){
+ let copied=false;
+ if(navigator.clipboard && window.isSecureContext){
+   try {await navigator.clipboard.writeText(PIX_CODE);copied=true} catch(e) {}
+ }
+ if(!copied)copied=copyLegacy(PIX_CODE);
+ if(copied){showToast('Código Pix copiado!','Agora é só colar no aplicativo do banco.');}
+ else{showManualPix();}
+}
+document.getElementById('selectPixManual').addEventListener('click',()=>{
+ const field=document.getElementById('pixManualField');field.focus();field.select();field.setSelectionRange(0,field.value.length);
+});
+document.getElementById('closePixManual').addEventListener('click',()=>{
+ document.getElementById('manualPix').hidden=true;
+});
+document.getElementById('copyPix').addEventListener('click',copyPix);
+const brl=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'});
+function displayProgress(amount){
+ if(typeof amount!=='number' || !Number.isFinite(amount)||amount<0)return;
+ const percentage=Math.min(100,amount/GOAL*100),remaining=Math.max(0,GOAL-amount);
+ document.getElementById('raised').textContent=brl.format(amount);
+ document.getElementById('percent').textContent=percentage.toFixed(percentage===0?0:1).replace('.',',')+'%';
+ document.getElementById('fill').style.width=percentage+'%';
+ document.getElementById('remaining').textContent=remaining>0?'Faltam '+brl.format(remaining):'Meta alcançada!';
+ document.getElementById('bar').setAttribute('aria-valuenow',Math.min(GOAL,amount));
+}
+</script>
+</body></html>
